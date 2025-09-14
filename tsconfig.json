@@ -2,6 +2,7 @@
     "compilerOptions": {
       "declaration": true,
       "sourceMap": true,
+      "skipLibCheck": true,
       "outDir": "dist",
       "lib": ["DOM", "ES2022"]
     },

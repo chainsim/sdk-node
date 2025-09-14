@@ -15,6 +15,54 @@ The cSIM SDK provides a simple and secure way to implement phone number verifica
 - Axios-based HTTP client
 - Minimal dependencies
 
+## Roadmap
+
+The following roadmap outlines the next implementation steps for enhanced cSIM SDK functionality:
+
+### Phase 1: Contract Integration
+- [ ] **Contract Address Resolution**
+  - [ ] SDK retrieves contract addresses by ChainSIM number from cSIM database
+  - [ ] Implement mapping between ChainSIM identifiers and TON blockchain contracts
+
+### Phase 2: TON Blockchain Integration
+- [ ] **Public Key Retrieval**
+  - [ ] SDK makes RPC requests to TON network
+  - [ ] Implement `get_public_key` method calls to `nft_item` contracts
+  - [ ] Handle TON RPC responses and error scenarios
+
+### Phase 3: Enhanced Messaging System
+- [ ] **Custom Message Support**
+  - [ ] Implement `sendMessage()` method in SDK
+  - [ ] Allow providers to specify custom SMS text content
+  - [ ] Enable provider-controlled TOTP generation and validation
+  - [ ] Support flexible message formatting and localization
+
+### Phase 4: End-to-End Encryption
+- [ ] **Message Encryption**
+  - [ ] Implement message encryption using retrieved public keys
+  - [ ] Ensure only end users and providers can decrypt message content
+  - [ ] Maintain zero-knowledge architecture where cSIM bridge cannot read message contents
+
+### Phase 5: Bridge Integration
+- [ ] **Encrypted Message Transmission**
+  - [ ] SDK sends encrypted messages to cSIM bridge
+  - [ ] Bridge forwards encrypted content without decryption capabilities
+  - [ ] Maintain privacy and security throughout the transmission process
+
+### Phase 6: Blockchain Transaction Processing
+- [ ] **TON Network Transactions**
+  - [ ] Bridge creates and sends transactions to `nft_item` addresses
+  - [ ] Encrypted messages are sent on TON blockchain and can be seen in ChainSIM App
+
+### Phase 7: Indexing and Frontend Support
+- [ ] **Message Indexing**
+  - [ ] Implement indexer to capture blockchain messages
+  - [ ] Store encrypted messages in database for frontend accessibility
+  - [ ] Provide convenient APIs for message retrieval and display
+  - [ ] Maintain message history and audit trails
+
+This roadmap ensures a secure, decentralized messaging system where privacy is maintained end-to-end, with cSIM acting as a trusted bridge without access to message contents.
+
 ## System Requirements
 
 - Node.js 14.x or higher

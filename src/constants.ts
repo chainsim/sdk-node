@@ -1,1 +1,1 @@
-export const MAINNET_API_URL = 'https://chainsim.io/api/v1/bridge';
+export const MAINNET_API_URL = 'https://api.chainsim.io/api/v1/bridge';

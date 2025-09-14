@@ -1,12 +1,13 @@
 {
   "name": "@chainsim/sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SDK for cSIM Integration",
   "homepage": "https://chainsim.io",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "format": "prettier --write src/**/*.ts"
@@ -16,10 +17,10 @@
   },
   "license": "Apache-2.0",
   "devDependencies": {
-    "prettier": "^3.4.2"
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3"
   },
   "dependencies": {
-    "axios": "^1.7.9",
-    "typescript": "^5.7.3"
+    "axios": "^1.7.9"
   }
 }
