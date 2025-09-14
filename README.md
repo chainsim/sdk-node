@@ -88,6 +88,10 @@ To use the SDK, you'll need:
 - A Provider ID from cSIM
 - An API Key from cSIM
 
+Get your own credentials - https://t.me/chainsim_partnerships;
+
+ChainSIM demo application - https://chainsimdemo.xyz
+
 Create a new client instance with your credentials:
 
 ```typescript
@@ -261,6 +265,6 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 For support, please:
 - Visit our website: [https://chainsim.io](https://chainsim.io)
 - Check our documentation
-- Contact our support team
+- Contact our support team: https://t.me/chainsim_partnerships
 
 For bug reports and feature requests, please open an issue on our GitHub repository.
